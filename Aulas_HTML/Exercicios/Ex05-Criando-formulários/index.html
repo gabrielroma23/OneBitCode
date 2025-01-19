@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span><a href="Introdução.html">Página Inicial</a></span>
+    <hr>
+
+    <h1>Criando formulários</h1>
+
+    <form action="processar.js" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome"> <br> <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"> <br> <br>
+
+        <label for="whatsapp">whatsapp:</label>
+        <input type="number" name="whatsapp" id="whatsapp"> <br><br>
+
+        <label for="atuacao">Área de atuação: </label> <br>
+        <input type="radio" name="atuacao" value="Desenvolvimento" id="Desenvolvimento">
+        <label for="Desenvolvimento">Desenvolvimento</label>
+        <input type="radio" name="atuacao" value="Quality assurence (QA)" id="Quality assurence (QA)">
+        <label for="QA">QA</label>
+        <input type="radio" name="atuacao" value="Infraestrutura" id="Infraestrutura">
+        <label for="Infraestrutura">Infraestrutura</label> <br><br>
+
+        <label for="observacao">Observações: </label> <br>
+        <textarea name="observacao" id="observacao" cols="30" rows="10"></textarea> <br><br>
+
+        <input type="checkbox" name="novidades" id="novidades" value="">
+        <label for="novidades">Deseja receber atualizações por email</label> <br><br>
+         
+        <input type="submit" value="Enviar">
+
+
+    </form>
+</body>
+</html>
