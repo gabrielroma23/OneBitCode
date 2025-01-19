@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span><a href="Introdução.html">Página Inicial</a></span>
+    <hr>
+
+    <h1>Criando tabelas</h1>
+    <p>A seguir vou criar uma tabela e detalhar seu passo a passo</p>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+
+        <tr>
+            <th>Ana Carolina</th>
+            <th>23 anos</th>
+        </tr>
+
+        <tr>
+            <th>Carlos Alberto</th>
+            <th>45 anos</th>
+        </tr>
+
+    </table>
+    
+    <h2>Explicação</h2>
+    <p>< table >: Esta tag inicia a tabela.</p>
+    <p>border="1": Esta atribuição adiciona uma borda às células da tabela.</p>
+    <p>< tr >: Significa "table row" (linha da tabela) e é usada para definir uma linha da tabela.</p>
+    <p>< th >: Significa "table header" (cabeçalho da tabela) e é usada para definir um cabeçalho de coluna.</p>
+    <p>< td >: Significa "table data" (dados da tabela) e é usada para definir uma célula de dados.</p>
+
+    <h2>Mesclando células</h2>
+    <p>Você pode mesclar células em uma tabela usando os atributos colspan e rowspan.</p> 
+    <p>Exemplo com colspan (mescla colunas):</p>
+
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th colspan="2">Informações</th>
+        </tr>
+        <tr>
+            <td>Ana Carolina</td>
+            <td>Idade: 25</td>
+            <td>Cidade: Sorocaba</td>
+        </tr>
+    </table>
+    
+    <p>Exemplo com rowspan (mescla linhas):</p>
+    <table border="1">
+        <tr>
+            <th rowspan="2">Nome</th>
+            <th>Informações</th>
+        </tr>
+        <tr>
+            <td>Idade e Cidade</td>
+        </tr>
+        <tr>
+            <td>Bruno</td>
+            <td>30, São Paulo</td>
+        </tr>
+    </table>
+    
+
+</body>
+</html>

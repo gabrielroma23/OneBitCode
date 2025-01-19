@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <!--Head é onde são definidos os metadados da página-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pagina de Estudos do HTML</h1>
+    <!--Body é a tag onde é inserido todo o conteúdo da página-->
+
+    <!--Classificação de títulos-->
+    <h1>Aula 01: Tipos de títulos</h1>
+
+    <h1>1º Título</h1>
+    <p>Este é um texto</p> <!--Essa é a tag utilizada para escrever textos dentro do HTML-->
+    <h2>º Título</h2>
+    <h3>3º título</h3>
+    <h4>4º título </h4>
+    <h5>5º título</h5>
+    <h6>6ºtítulo</h6>
+
+    <h1>Aula 02: Elementos de formatação</h1>
+
+    <p>No HTML é possível utilizar o negrito e italico de duas maneiras</p>
+    <p><i>Utilzando a tag "< / i >" </i></p>
+    <p><em> Ou utilizar a tag semântica "< em >" </em></p> <!-- sempre que possível utilizar as classificações semânticas-->
+    <p><b>Em negrito utilizamos "< b >" </b></p>
+    <p><strong>Em negrito semântico usamos "< strong >"</strong></p>
+
+    <h1>Aula 03: Incluindo imagens </h1>
+    <p>Podemos incluir imagens localmente, colocando os arquivos na mesma pasta que o arquivo HTML, ou imagens da internet, através da sua URL. Inclua as imagens utilizando a tag  e o atributo “src”:</p>
+
+    <img src="imagens-introdução/capa1.webp" alt="imagem da primeira capa do livro do senhor dos anéis" height="400">
+    <!--nesse primeiro caso busquei a imagem localmente no computador e inseri, o atributo "alt" é uma descrição da imagem para pessoas com deficiência visual-->
+
+    <img src="https://4.bp.blogspot.com/_hzu5aCzoubQ/S4agh6N48TI/AAAAAAAAHL0/NYEHkbIvOA0/w276-h400/heir+to+the+empire+cover.jpg" alt=" mais uma capa de livro">
+    <!---nesse segundo caso, inseri direto da web, colocando o link da imagem-->
+
+    <p>jpgeg: mais detalhamento e mais pesado</p>
+    <p>png: menos detalhes e mais leve, pode ter fundo transparente</p>
+    <p>webp: criado para web, mais otimizado </p>
+    <p>svg: imagens de vetores calculados</p>
+
+    <p>atributo "srcset" para varios tamanhos de imagens diferentes</p>
+    <img src="/Aulas_HTML/imagens-introdução/imagem-pequena.jpg" srcset="/Aulas_HTML/imagem-media.jpg 100x, /Aulas_HTML/imagem-grande.jpg 200x" alt="Descrição da imagem">
+
+    <h1>Aula 04: quebras de Linha</h1>
+    <p>Para realizarmos a quebra de linha, utilizamos a tag "< br >"</p>
+    <p>Para criarmos uma linha horizontal, utilizamos a tag "< hr >"</p>
+    <p>É importante destacar que, apesar de ser possível utilizar esses elementos, muitas vezes esses efeitos (quebra de linha e separação através de uma linha horizontal) serão obtidos através do CSS, o que faz com que essas tags sejam pouco usadas (especialmente o < br >). Apesar disso, você pode sim utilizá-las se necessário e não há nada de errado com isso.</p>
+    <p>Este é <br>  <hr> um texto com <br> quebra de linhas</p>
+    <hr>
+
+    <h1>Aula 05: Organizando com < div > e < span > </h1>
+    <p>No HTML temos dois elementos genéricos para ajudar na organização da página, o < div > e o < span >. Eles são similares e a principal diferença é que o < div > organiza em blocos e o < span > organiza em linha.</p>
+    <div><p>Este é um texto dentro de uma < div > </p></div>
+    <div><p>Este é mais um dentro de outra < div > </p></div>
+    <span>Este é um texto dentro de um < span > </span>
+    <span>| Mais outro </span>
+    <span>| Esse é o último</span>
+
+    <h1>Aula 06: trabalhando com links</h1>
+    <p>Para criar links para outras páginas utilize a tag âncora, ou < a >: </p>
+    <a href="Aula07-Urls-relativas-e-absolutas.html">Aula 07 - Entendendo Urls Absolutas e Relativas</a>
+    <br>
+    <a href="Aula08-Link-na-pagina.html">Aula 08 - Links em uma mesma página</a>
+    <br>
+    <a href="Aula09-Links-Externos.html">Aula 09 - Links Externos</a>
+    <br>
+    <a href="Aula10-Tipos-de-lista.html">Aula 10 - Tipos de Listas</a>
+    <br>
+    <a href="Aula11-tabelas.html">Aula 11 - Criando tabelas</a>
+
+
+
+</body>
+</html>
