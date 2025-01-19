@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span><a href="Introdução.html">Página Inicial</a></span>
+    <hr>
+
+    <h1>Criando formulários em HTML</h1>
+    <p>A estrutura básica de um formulário HTML envolve a tag < form > e alguns elementos de entrada (inputs) como < input >, < select >, < textarea >, entre outros.</p>
+    <p>Exemplo siples</p>
+    <form action="processar.js" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br><br>
+    </form>
+
+    <p>
+        < form>: Inicia o formulário. <br>
+
+        action: Define a URL para onde os dados do formulário serão enviados. <br>
+        
+        method: Define o método de envio dos dados (GET ou POST). <br>
+        
+        < label>: Define um rótulo para um campo de entrada. <br>
+        
+        < input>: Define um campo de entrada. <br>
+        
+        type: Define o tipo do campo de entrada (ex.: text, email, submit).</p>
+
+
+    <h2>Formulário com Vários Tipos de Campos</h2>
+
+    <form action="processar.php" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+        
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade" min="0"><br><br>
+        
+        <label for="dataNascimento">Data de Nascimento:</label><br>
+        <input type="date" id="dataNascimento" name="dataNascimento"><br><br>
+        
+        <label for="genero">Gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br><br>
+        
+        <label for="preferencias">Preferências:</label><br>
+        <input type="checkbox" id="esportes" name="preferencias" value="esportes">
+        <label for="esportes">Esportes</label><br>
+        <input type="checkbox" id="musica" name="preferencias" value="musica">
+        <label for="musica">Música</label><br><br>
+        
+        <label for="pais">País:</label><br>
+        <select id="pais" name="pais">
+            <option value="brasil">Brasil</option>
+            <option value="eua">EUA</option>
+            <option value="japao">Japão</option>
+        </select><br><br>
+        
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p>
+        Explicação Adicional: <br>
+        < input type="password" >: Campo de senha. <br>
+
+        < input type="number" >: Campo numérico. <br>
+
+        < input type="date" >: Campo de data. <br>
+
+        < input type="radio" >: Botão de opção. <br>
+
+        < input type="checkbox" >: Caixa de seleção. <br>
+
+        < select> e < option >: Menu suspenso. <br>
+
+        < textarea >: Área de texto.
+    </p>
+
+    <h2>Validação de Formulário</h2>
+    <p>Você pode adicionar validação aos campos para garantir que os dados inseridos atendam aos critérios específicos.</p>
+
+    <input type="text" id="nome" name="nome" required>
+
+    <p>O atributo required indica que o campo é obrigatório.</p>
+
+</body>
+</html>
